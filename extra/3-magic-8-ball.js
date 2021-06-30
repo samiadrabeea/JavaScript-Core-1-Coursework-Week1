@@ -64,10 +64,24 @@ function shakeBall() {
 function checkAnswer(answer) {
   //Write your code in here
  if (answer==="very positive"){
-   let value=["It is certain.","It is decidedly so.","Without a doubt.","Yes - definitely.","You may rely on it." ]
-   return (value[Math.floor(Math.random()*4)]);
+   let value1=["It is certain.","It is decidedly so.","Without a doubt.","Yes - definitely.","You may rely on it." ];
+   return (value1[Math.floor(Math.random()*4)]);
  }
+  
+   if (answer==="positive"){
+   let value2=["As I see it, yes.","Most likely.","Without a doubt.","Outlook good.","Yes."," Signs point to yes." ]  ;
+   return (value2[Math.floor(Math.random()*5)]);
+   }
+  
+   if (answer==="Negative"){
+   let value3=[" Reply hazy", "try again." ,"Ask again later." ,"Better not tell you now." ,"Cannot predict now." ," Concentrate and ask again." ]  ;
+   return (value3[Math.floor(Math.random()*5)]);
+   }
 
+   if (answer==="Very negative"){
+   let value4=["Don't count on it.", " My reply is no." ,"My sources say no." ," Outlook not so good." ," Very doubtful." ]  ;
+   return (value4[Math.floor(Math.random()*4)]);
+   }
 }
  let answer1=shakeBall();
  consol.log(checkAnswer(answer1));
