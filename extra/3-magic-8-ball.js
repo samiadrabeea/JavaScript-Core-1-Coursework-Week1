@@ -47,8 +47,11 @@
 // and return the answer.
 function shakeBall() {
   //Write your code in here
+  let answer=["very positive","positive","negative","very negative"];
+  console.log("The ball has shaken!")
+  return answer[Math.floor(Math.random()*3)];
 }
-
+ console.log(shakeBall());
 /* 
   This function should say whether the answer it is given is
     - very positive
@@ -57,11 +60,17 @@ function shakeBall() {
     - very negative
 
   This function should expect to be called with any value which was returned by the shakeBall function.
-*/
+*/ 
 function checkAnswer(answer) {
   //Write your code in here
-}
+ if (answer==="very positive"){
+   let value=["It is certain.","It is decidedly so.","Without a doubt.","Yes - definitely.","You may rely on it." ]
+   return (value[Math.floor(Math.random()*4)]);
+ }
 
+}
+ let answer1=shakeBall();
+ consol.log(checkAnswer(answer1));
 /* 
 ==================================
 ======= TESTS - DO NOT MODIFY =====

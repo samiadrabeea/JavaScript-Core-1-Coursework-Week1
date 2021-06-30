@@ -1,14 +1,14 @@
 // There are syntax errors in this code - can you fix it to pass the tests?
 
-function addNumbers(a b c) {
+function addNumbers(a, b ,c) { // adding the comma between the prameter 
   return a + b + c;
 }
 
 function introduceMe(name, age)
-  return "Hello, my name is " + name "and I am " age + "years old";
+  return "Hello, my name is " + name+ "and I am "+ age + "years old"; //adding concatenation + of string 
 
 function getTotal(a, b) {
-  total = a ++ b;
+  total = a + b;// remove +
 
   return "The total is total";
 }
